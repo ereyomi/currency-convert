@@ -1,1 +1,192 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body {
+   	background: #00aaff;
+}
+#container{
+	width:100%;
+	min-height:100%;
+}
+.big-box {
+	width:80%;
+	height:auto;
+	margin: 50px auto;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(20deg, #004d99, #1a8cff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(20deg, #004d99, #1a8cff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(20deg, #004d99, #1a8cff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(20deg,#004d99, #1a8cff); /* Standard syntax (must be last) */
 
+}
+.box1{
+	width: 100%;
+}
+h2 {
+	color:#cce6ff;
+	padding: 20px 0px;
+	margin: 0;
+}
+.box2{
+	width: 100%;
+	display: inline-flex;
+}
+.left{
+ width:50%;
+}
+.right {
+	width: 50%;
+	text-align: left;
+}
+.right span {
+	font-size: 10px;
+	color:  #66e0ff;
+}
+input[type = "text"] {
+	padding: 10px 5px;
+	width: 60%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px solid #66b3ff;
+	background: none;
+	margin: 10px;
+	color: #66b3ff;
+}
+.left span {
+	margin: 10px;
+}
+.show {
+	width: 70%;
+	height: 60px;
+	margin-left: 20px;
+	text-align: left;
+}
+.show span {
+	color: white;
+	font-size: 10px;
+}
+.show p {
+	text-align: center;
+	font-size: 20px;
+	color: #99ccff;
+}
+input[type = "text"]::placeholder {
+	color: #66b3ff;
+	font-size:8px;
+}
+.right select {
+	padding: 9px;
+	width: 97%;
+	border:none;
+}
+.right button {
+	padding: 8px 10px;
+	border:none;
+	background:#1a8cff;
+	color: white;
+	cursor: pointer;
+	border-radius: ;
+	margin: 10px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+button:hover {
+	background:#002233;
+}
+/* modal box */
+.modal-box {
+	display: none; /* Hidden by default */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Sit on top */
+	    padding-top: 100px; /* Location of the box */
+	    left: 0;
+	    top: 0;
+	    width: 100%; /* Full width */
+	    height: 100%; /* Full height */
+	    overflow: auto; /* Enable scroll if needed */
+	    background-color: rgb(0,0,0); /* Fallback color */
+	    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-inner{
+	position: relative;
+		background: #b3daff;
+    margin: auto;
+    padding: 5px;
+    width: 87%;
+		height: auto;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatetop;
+    animation-duration: 0.5s
+}
+.modal-box button{
+	padding: 8px 10px;
+	border:none;
+	background:#1a8cff;
+	color: white;
+	cursor: pointer;
+	border-radius: ;
+	margin: 10px 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.display {
+	color: #00ccff;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* modal end */
+
+footer {
+	text-align: center;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+		color: #003366;
+		font-size: 13px;
+}
+@media only screen and (min-width: 450px) {
+.big-box {
+		width: 80%;
+     }
+
+		input[type = "text"] {
+			width:80%;
+		}
+		.show { width: 80%;}
+}
+@media only screen and (min-width: 600px) {
+.big-box {
+		width: 60%;
+     }
+		 input[type = "text"]::placeholder {
+			 font-size: 12px;
+		 }
+		 .right span {font-size: 12px;}
+}
+@media only screen and (min-width: 768px) {
+.big-box {
+		width: 50%;
+     }
+		 input[type = "text"]::placeholder {
+			 font-size: 15px;
+		 }
+		 .show span { font-size: 15px;}
+		 .show p {font-size: 25px;}
+		 .right span {font-size: 12px;}
+		 .footer{font-size: 15px;}
+}
