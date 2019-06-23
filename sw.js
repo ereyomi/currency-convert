@@ -1,5 +1,5 @@
 console.log('serviceworker is working');
-const CONVERTER_CACHE = 'converter-Cache-v1';
+const CONVERTER_CACHE = 'converter-Cache-v2';
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CONVERTER_CACHE).then((cache) => {
